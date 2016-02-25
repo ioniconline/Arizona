@@ -1,0 +1,234 @@
+/* Empty. Add your own CSS if you like */
+
+.spinner svg {
+    /*    padding-top: 200px;*/
+    width: 100%;
+    height: 200px;
+    /*    stroke: #444;*/
+    /*    fill: #444;*/
+}
+
+.card {
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+.cate_name {
+    margin-bottom: 4px;
+    margin-top: 4px;
+    text-align: center;
+}
+
+.align-center {
+    margin: 2px auto;
+    text-align: center;
+}
+
+.space a {
+    float: left;
+    width: 0%;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 0;
+    position: relative;
+    padding: .5em 1em;
+    color: rgba(0, 0, 0, 0.8);
+    background-color: #cad5eb;
+}
+
+#content {
+    width: 100%;
+    height: 5px;
+    /*    margin: 0px;: 10px 5px 0px 0px;*/
+    margin: 0px;
+    background: #8b8b8b;
+}
+
+.fullwidth .expand {
+    width: 100%;
+    height: 5px;
+    margin: 0;
+    background: #e76d21;
+    position: absolute;
+    box-shadow: 0px 0px 10px 1px rgba(0, 198, 255, 0.7);
+    -moz-animation: fullexpand 60s ease-out;
+    -webkit-animation: fullexpand 60s ease-out;
+}
+
+@-moz-keyframes fullexpand {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes fullexpand {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+
+/** play **/
+
+.play_pic {
+    width: 100%;
+    height: auto;
+}
+
+#player {
+    position: fixed;
+    bottom: 5px;
+    opacity: 0.2;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+
+.ctl_button {
+    width: 72px;
+    height: 72px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    margin: 0 auto;
+    border: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ctl_button.play {
+    background: url("../img/icon_play.png");
+}
+
+.ctl_button.pause {
+    background: url("../img/icon_pause.png");
+}
+
+.ctl_button.restart {
+    background: url("../img/icon_restart.png");
+}
+
+.ctl_button.share {
+    background: url("../img/icon_share.png");
+}
+
+.ctl_button.preview {
+    background: url("../img/icon_preview.png");
+}
+
+#player:hover {
+    opacity: 1;
+}
+
+.playlist {
+    text-align: left;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    position: relative;
+    left: 0;
+    z-index: 999;
+    background-color: black;
+}
+
+.info a {
+    color: #bbb;
+    text-decoration: underline;
+}
+
+.bg {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#bg_pic {
+    background-color: #5493B6;
+}
+
+#bg_dark {
+    background-color: #aaaaaa;
+}
+
+#playlist ol {
+    height: 480px;
+    overflow: hidden;
+    margin: 0;
+}
+
+.lyricWrapper {
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.lyricContainer {
+    position: relative;
+    top: 130px;
+    height: 100%;
+    color: #838383;
+    /*    text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000;*/
+}
+
+
+/*the highlight color of the current lyric line*/
+
+.current-line-0 {
+    color: #ed4949;
+}
+
+.current-line-1 {
+    color: #ff1493;
+}
+
+.current-line-2 {
+    color: #adff2f;
+}
+
+.current-line-3 {
+    color: #c617e8;
+}
+
+.current-song,
+.current-song a {
+    color: #A6E22D;
+}
+
+
+/*hide the default audio controls when overflow, the 526px is the width of the controls in IE*/
+
+@media screen and (max-width: 526px) {
+    #player {
+        display: none;
+    }
+}
+
+
+/*custom scrollbar for webkit browsers*/
+
+#playlist ol::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    background-color: #F5F5F5;
+}
+
+#playlist ol::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 15px;
+    background-color: #F5F5F5;
+}
+
+#playlist ol::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #BCBCBC;
+}

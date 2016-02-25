@@ -1,0 +1,11 @@
+<ion-view style="" title="讲故事 - {{cate}}">
+    <ion-content class="has-header" overflow-scroll="true" padding="true">
+        <div class="list">
+            <a ng-repeat="item in items" class="item item-thumbnail-left" ng-click="showStoryDetail(item.id)">
+                <img ng-src="{{ item.image }}" width="20px" height="20px" style="border-radius: 10%;">
+                <h2>{{ item.title }}</h2>
+                <h4>{{ item.age }}</h4>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

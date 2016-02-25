@@ -1,0 +1,8 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/Users/21k/serverCode/CareHealth/SpeakStory/www/lib/ionic/js/ionic.min.js",
+        "/home/caredear/workspace/www.caredear.com/server/CareHealth/SpeakStory/platforms/android/assets/www/lib/ionic/js/angular/angular-sanitize.js",
+        "/home/caredear/workspace/www.caredear.com/server/CareHealth/SpeakStory/platforms/android/assets/www/lib/ionic/js/angular/angular-sanitize.min.js",
+        "/home/caredear/workspace/www.caredear.com/server/CareHealth/SpeakStory/www/js/play.js"
+    ]
+}

@@ -1,0 +1,52 @@
+<ion-modal-view>
+    <ion-header-bar class="bar-balanced">
+        <h1 class="title">{{detail.title}}</h1>
+        <div class="buttons">
+            <button class="button button-clear" ng-click="close()">返回</button>
+            <button class="button button-clear" ng-click="close()"></button>
+        </div>
+    </ion-header-bar>
+    <style>
+        .div-a {
+            float: left;
+            width: 49%;
+        }
+        
+        .div-b {
+            float: right;
+            width: 49%;
+        }
+    </style>
+
+    <ion-content>
+        <img style="height:180px; width:100%;" ng-src="{{detail.image}}">
+        <ion-scroll style="height:30%; width:100%;background-color:#e8e8e8">
+            <div class="lyricWrapper" id="lyricWrapper">
+                <div class="lyricContainer" id="lyricContainer">
+                </div>
+            </div>
+        </ion-scroll>
+
+        <div id="content">
+            <ul>
+                <li>
+                    <span class="expand" style="animation-play-state:{{animationstatus}};"></span>
+                </li>
+                <li>
+                    <div class="div-a" align=left>{{mytime}}</div>
+                    <div class="div-b" align=right>01:00</div>
+                </li>
+        </div>
+
+        <div class="align-center">
+            <ul>
+                <li>
+                    <button id="btn_restart" class="ctl_button restart" ng-show="touchNumber%3==2" ng-click="restartanimation()"></button>
+                    <button id="btn_play_pause" class="ctl_button play" ng-click="startanimation()"></button>
+                    <button id="btn_share" class="ctl_button share" ng-show="touchNumber%3==2" ng-click="shareanimation()"></button>
+                </li>
+            </ul>
+        </div>
+
+    </ion-content>
+</ion-modal-view>

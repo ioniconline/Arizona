@@ -1,0 +1,38 @@
+<ion-view style="" title="我的">
+    <ion-content class="has-header" overflow-scroll="true" padding="true">
+        <div class="list">
+            <a class="item item-icon-left">
+                <i class="icon ion-heart" ng-click="gotoFavorites()"></i>
+                <span ng-click="checkUpdate()">收藏</span>
+            </a>
+
+            <a class="item item-icon-left" ng-click="setupPush()">
+                <i class="icon ion-ios-cloud-download"></i> 新故事推送
+            </a>
+
+            <li class="item item-icon-left item-toggle">
+                <i class="icon ion-wifi"></i> 仅Wifi下使用
+                <label class="toggle toggle-assertive">
+                    <input type="checkbox">
+                    <div class="track">
+                        <div class="handle"></div>
+                    </div>
+                </label>
+            </li>
+
+            <a class="item item-icon-left" href="#/tab/profile/feedback">
+                <i class="icon ion-email"></i> 意见反馈
+            </a>
+
+            <a class="item item-icon-left" href="#/tab/profile/about">
+                <i class="icon ion-home"></i> 关于我们
+            </a>
+
+            <a class="item item-icon-left">
+                <i class="icon ion-android-refresh" ng-click="checkUpdate()"></i>
+                <span ng-click="checkUpdate()">检查新版本</span>
+            </a>
+        </div>
+
+    </ion-content>
+</ion-view>
